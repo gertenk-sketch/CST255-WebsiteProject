@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>
-    CST255_200 Internet and Website Development
+    Personal Introduction
   </title>
 </head>
 <body>
@@ -11,23 +11,38 @@
   <h1>About Me</h1>
 
   <p>
-    my name is Katherine Gerten but I go by Katie.
+    My name is Katherine Gerten, but I go by Katie. I live in Ohio. I'm very young for being in college, and am able to attend college so young because of the CCP program. Really, I'm supposed to be going into my sophomore year of high school. Some of my favorite hobbies are reading, programming, and drawing. I enjoy water sports and golf.
   </p>
 
-  <p>
-  </p>
-  
-  <h2>Why I'm Taking This Course</h2>
+  <h2>My Family</h2>
 
   <p>
+    I have three siblings and three pets, a dog and 2 cats. My oldest sister's name is Aubrey. She is going to college to be a doctor. I'm the second oldest. My younger brother is named Ethan. He plans to follow me into computer science. My youngest sibling is my sister, Natalie. She is also going into the medical field.
+  </p>
+
+  <hr>
+
+  <h2>My Future</h2>
+
+  <p>
+    In my future, I plan to program software, specifically AI. 
   </p>
 
   <h2>Programing languges I know</h2>
 
   <ul>
+    <li>Python</li>
+    <li>A small amount of C#</li>
+    <li>A small amount of C</li>
   </ul>
 
-  <h2>why I want to work on AI in the future</h2>
+  <h2>Why I want to work on AI in the future</h2>
 
+  <ol>
+    <li>AI has always interested me</li>
+    <li>AI is the closest thing we have come to replicating humanity</li>
+    <li>Money</li>
   </ol>
-  </ol>
+
+</body>
+</html>
