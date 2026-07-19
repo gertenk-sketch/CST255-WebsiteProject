@@ -33,12 +33,12 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
   }
 
   .group{
-    flex: 1 1 220px;
+    flex: 1 1 200px;
     background-color: #55BBF1;
     border: 1px solid #d0d0d0;
     border-radius: 6px;
