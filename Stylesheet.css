@@ -6,10 +6,44 @@ body {
   padding: 2rem;
   line-height: 1.5;
 
+.site-header {
+  background-color: #1f4e79;
+  color: #ffffff;
+  padding: 1rem 2rem;
+ }
+
+.site-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+color: #ffffff;
+  border-bottom: 2px solid #1f4e79;
+  padding-bottom: 0.4rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+.site-header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .page {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   }
+
+.main-area {
+  display: flex;
+  gap: 32px;
+  padding: 2rem;
+}
+
+
 
 h1 {
   font-size: 2rem;
@@ -18,14 +52,27 @@ h1 {
   padding-bottom: 0.4rem;
   }
 
+
+
 .intro {
   font-style: italic;
   color: #001B2E;
   margin-bottom: 2rem;
   }
 
+
+
+
 p {
  
+}
+
+
+.sidebar {
+  width: 250px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 1rem;
 }
 
   .groups {
@@ -35,15 +82,17 @@ p {
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+margin: 0 auto; 
   }
 
   .group{
-    flex: 1 1 200px;
+    flex: 1 0 200px;
     background-color: #55BBF1;
     border: 1px solid #d0d0d0;
     border-radius: 6px;
     padding: 1rem 1.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
     
   }
 
@@ -60,10 +109,18 @@ p {
 }
 
   .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+
   }
+
+
+.site-footer {
+  width: 100%; 
+  background-color: #2a2a2a;
+  color: #dddddd;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin: 0 auto; 
+}
 
     
