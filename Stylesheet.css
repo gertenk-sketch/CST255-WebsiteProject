@@ -83,18 +83,20 @@ p {
     gap: 40px;
     flex-wrap: wrap;
 margin: 0 auto; 
+
   }
 
-  .group{
-    flex: 1 0 200px;
-    background-color: #55BBF1;
-    border: 1px solid #d0d0d0;
-    border-radius: 6px;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-
-    
-  }
+  .group {
+  flex: 1 0 200px;
+  width: 100%;
+  max-width: 700px;        
+  background-color: #55BBF1;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
 
 .group h2 {
   color: #CFF2E8;
@@ -106,11 +108,10 @@ margin: 0 auto;
   margin-bottom: 0;
   font-size: 20px;
   color: rgb(10, 32, 12);
+
 }
 
-  .center {
 
-  }
 
 
 .site-footer {
@@ -121,6 +122,37 @@ margin: 0 auto;
   padding: 1rem;
   font-size: 0.9rem;
   margin: 0 auto; 
+}
+
+/* The JavaScript Stuff */
+.toggle-btn {
+  background-color: #1f4e79;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin: 0.75rem 0;
+}
+
+.toggle-btn:hover {
+  background-color: #163d5f;
+}
+
+.hidden {
+  display: none !important;  
+}
+
+.center {
+  .center {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 600px;   /* keeps the image the same size on every page */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 }
 
     
