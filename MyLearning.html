@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Stylesheet.css">
+  <title>My Learning - Katherine Gerten</title>
+</head>
+<body>
+<main class="page">
+
+  <header class="site-header">
+    <h1>What I Learned</h1>
+    <nav>
+      <a href="AboutME.html">About Me</a>
+      <a href="MyFamily.html">My Family</a>
+      <a href="MyFuture.html">My Future</a>
+      <a href="MyLearning.html">My Learning</a>
+    </nav>
+  </header>
+
+  <div class="main-area">
+    <section class="groups">
+
+      <article class="group">
+        <h2>Reflecting on This Class</h2>
+        <p class="intro-text">
+          During this class, I developed HTML, CSS, and JavaScript skills while building a real multi-page website.
+ The form below is a demo of a "grade your student" type questionnaire like the ones we are supposed to do for classes.
+        </p>
+      </article>
+	
+
+      <div class="form-section">
+<article class="group">
+
+          <!-- Professor Notes Section -->
+          <div class="professor-notes">
+            <h2>Professor Notes / Behavior Feedback</h3>
+            <p class="note">What would you like to say about me</p>
+            
+           <form id="learning-form" novalidate>
+            <div class="form-group">
+              <label for="behavior-notes">Notes on Student Behavior, Participation, and Work Ethic</label>
+              <textarea id="behavior-notes" name="behavior-notes" placeholder="Professor comments about attendance, engagement, collaboration, effort, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="grade-notes">Additional Grade or Project Feedback</label>
+              <textarea id="grade-notes" name="grade-notes" placeholder="Optional grading notes or overall project comments"></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Submit Reflection</button>
+            <button type="button" class="secondary" id="clear-form">Clear Form</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>By Katherine, Thank you for reviewing my work!</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
