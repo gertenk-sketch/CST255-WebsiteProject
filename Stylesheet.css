@@ -1,11 +1,17 @@
+/* ===== Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Georgia, serif;
-  background-color: #C9F0FF;
-  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #e8f6fc;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .page {
@@ -16,139 +22,164 @@ body {
   flex-direction: column;
 }
 
-/* Header */
+/* ===== Header & Navigation ===== */
 .site-header {
   background-color: #1f4e79;
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 1.25rem 1.5rem 1rem;
   text-align: center;
 }
 
 .site-header h1 {
-  margin: 0 0 0.5rem 0;
-  font-size: 2rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.85rem;
   color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
   padding-bottom: 0.4rem;
   display: inline-block;
 }
 
 .site-header nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
 }
 
 .site-header nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.25rem 0.5rem;
+  padding: 0.4rem 0.85rem;
   border-radius: 4px;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .site-header nav a:hover {
   background-color: #163d5f;
-  text-decoration: underline;
 }
 
-/* Main content area */
+.site-header nav a.current {
+  background-color: #ffffff;
+  color: #1f4e79;
+}
+
+/* ===== Main content ===== */
 .main-area {
   display: flex;
-  gap: 32px;
-  padding: 2rem;
+  gap: 1.75rem;
+  padding: 1.75rem 1.5rem;
   flex: 1;
+  align-items: flex-start;
 }
 
 .groups {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
+  gap: 1.5rem;
   flex: 1;
-  margin: 0 auto;
+  min-width: 0;
 }
 
 .group {
-  flex: 1 0 200px;
   width: 100%;
-  max-width: 700px;
-  background-color: #55BBF1;
-  border: 1px solid #d0d0d0;
-  border-radius: 6px;
-  padding: 1rem 1.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
+  background-color: #55bbf1;
+  border: 1px solid #3a9fd4;
+  border-radius: 8px;
+  padding: 1.15rem 1.35rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .group h2 {
   color: #0a2030;
-  margin-top: 0;
-  font-size: 1.35rem;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
-  padding-bottom: 0.3rem;
+  margin: 0 0 0.65rem 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  padding-bottom: 0.35rem;
 }
 
 .group p,
 .group li {
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.55rem 0;
   font-size: 1.05rem;
-  color: rgb(10, 32, 12);
+  color: #0a2010;
 }
 
 .group ul,
 .group ol {
-  margin: 0.5rem 0 0 1.2rem;
+  margin: 0.4rem 0 0 1.25rem;
   padding: 0;
 }
 
-/* Sidebar (used on Family page) */
-.sidebar {
-  width: 250px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  align-self: flex-start;
+.group a {
+  color: #0a3050;
+  font-weight: bold;
 }
 
-/* Footer */
+.group a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Sidebar (Family page) ===== */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+/* ===== Footer ===== */
 .site-footer {
   width: 100%;
   background-color: #2a2a2a;
   color: #dddddd;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1.25rem;
   font-size: 0.9rem;
   margin-top: auto;
 }
 
-/* Images */
+.site-footer p {
+  margin: 0;
+}
+
+/* ===== Images ===== */
 .center {
   display: block;
-  margin: 1.5rem auto;
-  max-width: 600px;
+  margin: 0.75rem auto 1rem;
+  max-width: 520px;
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Buttons */
+.image-block {
+  text-align: center;
+  margin: 0.25rem 0 0.5rem;
+}
+
+/* ===== Buttons ===== */
 .toggle-btn {
   background-color: #1f4e79;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.5rem 1.1rem;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 0.95rem;
-  margin: 0.75rem 0;
+  font-family: Georgia, serif;
+  margin: 0.4rem 0;
   transition: background-color 0.2s;
 }
 
@@ -160,29 +191,26 @@ body {
   display: none !important;
 }
 
-/* ========== FORM STYLES ========== */
+/* ===== Form styles ===== */
 .form-section {
   width: 100%;
-  max-width: 700px;
-  background-color: #55BBF1;
-  border: 1px solid #d0d0d0;
-  border-radius: 6px;
-  padding: 1.5rem 1.75rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
+  background-color: #55bbf1;
+  border: 1px solid #3a9fd4;
+  border-radius: 8px;
+  padding: 1.35rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .form-section h2 {
   color: #0a2030;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.35rem;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
-  padding-bottom: 0.3rem;
+  margin: 0 0 0.85rem 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  padding-bottom: 0.35rem;
 }
 
 .form-group {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
 }
 
 .form-group label {
@@ -190,40 +218,30 @@ body {
   font-weight: bold;
   margin-bottom: 0.35rem;
   color: #0a2030;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 0.6rem 0.75rem;
+  padding: 0.65rem 0.8rem;
   border: 1px solid #1f4e79;
-  border-radius: 4px;
+  border-radius: 5px;
   font-family: Georgia, serif;
   font-size: 1rem;
-  box-sizing: border-box;
   background-color: #ffffff;
-}
-
-.form-group textarea {
   min-height: 110px;
   resize: vertical;
 }
 
-.form-group input:focus,
-.form-group select:focus,
 .form-group textarea:focus {
   outline: 2px solid #1f4e79;
   outline-offset: 1px;
 }
 
-
 .form-actions {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 0.85rem;
+  margin-top: 1.25rem;
   flex-wrap: wrap;
 }
 
@@ -231,8 +249,8 @@ body {
   background-color: #1f4e79;
   color: white;
   border: none;
-  padding: 0.65rem 1.4rem;
-  border-radius: 4px;
+  padding: 0.6rem 1.3rem;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
   font-family: Georgia, serif;
@@ -251,7 +269,7 @@ body {
   background-color: #333;
 }
 
-/* Error and success messages */
+/* Error / success */
 .error-message {
   color: #8b0000;
   font-size: 0.9rem;
@@ -268,8 +286,8 @@ body {
   color: #155724;
   border: 1px solid #c3e6cb;
   padding: 0.85rem 1rem;
-  border-radius: 4px;
-  margin-bottom: 1.25rem;
+  border-radius: 5px;
+  margin-bottom: 1.15rem;
   display: none;
 }
 
@@ -282,12 +300,12 @@ body {
   background-color: #fff8e7;
   border: 2px dashed #c9a227;
   border-radius: 6px;
-  padding: 1.25rem;
-  margin-top: 1.5rem;
+  padding: 1.15rem;
+  margin-top: 0.5rem;
 }
 
 .professor-notes h3 {
-  margin-top: 0;
+  margin: 0 0 0.4rem 0;
   color: #5c4a00;
   font-size: 1.15rem;
 }
@@ -296,12 +314,56 @@ body {
   font-size: 0.9rem;
   font-style: italic;
   color: #666;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.85rem 0;
 }
 
-/* Utility */
 .intro-text {
-  max-width: 700px;
   margin-bottom: 0.5rem;
   font-size: 1.05rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 720px) {
+  .main-area {
+    flex-direction: column;
+    padding: 1.25rem 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .site-header h1 {
+    font-size: 1.55rem;
+  }
+
+  .site-header nav {
+    gap: 0.35rem;
+  }
+
+  .site-header nav a {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .group,
+  .form-section {
+    padding: 1rem 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 1rem 0.85rem 0.85rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
 }
