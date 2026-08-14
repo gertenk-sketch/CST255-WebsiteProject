@@ -64,10 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let isValid = true;
 
-
-
-      
-      // Validate behavior notes if present (at least some text)
+      // Validate behavior notes (at least 10 characters)
       const behaviorInput = document.getElementById('behavior-notes');
       const behaviorError = document.getElementById('behavior-error');
       if (behaviorInput && behaviorError) {
