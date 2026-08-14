@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Stylesheet.css">
-  <title>My Learning - Katherine Gerten</title>
+  <title>Personal Introduction - My Learning</title>
 </head>
 <body>
 <main class="page">
@@ -14,7 +15,7 @@
       <a href="AboutME.html">About Me</a>
       <a href="MyFamily.html">My Family</a>
       <a href="MyFuture.html">My Future</a>
-      <a href="MyLearning.html">My Learning</a>
+      <a href="MyLearning.html" class="current">My Learning</a>
     </nav>
   </header>
 
@@ -24,37 +25,39 @@
       <article class="group">
         <h2>Reflecting on This Class</h2>
         <p class="intro-text">
-          During this class, I developed HTML, CSS, and JavaScript skills while building a real multi-page website.
- The form below is a demo of a "grade your student" type questionnaire like the ones we are supposed to do for classes.
+          During this class, I developed HTML, CSS, and JavaScript skills while building
+          a real multi-page website. The form below is a demo of a "grade your student"
+          type questionnaire like the ones we are supposed to do for classes.
         </p>
       </article>
-	
 
       <div class="form-section">
-<article class="group">
+        <div class="professor-notes">
+          <h3>Professor Notes / Behavior Feedback</h3>
+          <p class="note">What would you like to say about me?</p>
 
-          <!-- Professor Notes Section -->
-          <div class="professor-notes">
-            <h2>Professor Notes / Behavior Feedback</h3>
-            <p class="note">What would you like to say about me</p>
-            
-           <form id="learning-form" novalidate>
+          <div id="form-success" class="success-message">
+            Form submitted successfully! (Demo only — nothing was actually sent.)
+          </div>
+
+          <form id="learning-form" novalidate>
             <div class="form-group">
               <label for="behavior-notes">Notes on Student Behavior, Participation, and Work Ethic</label>
               <textarea id="behavior-notes" name="behavior-notes" placeholder="Professor comments about attendance, engagement, collaboration, effort, etc."></textarea>
+              <div id="behavior-error" class="error-message">Please write at least 10 characters of feedback.</div>
             </div>
 
             <div class="form-group">
               <label for="grade-notes">Additional Grade or Project Feedback</label>
               <textarea id="grade-notes" name="grade-notes" placeholder="Optional grading notes or overall project comments"></textarea>
             </div>
-          </div>
 
-          <div class="form-actions">
-            <button type="submit">Submit Reflection</button>
-            <button type="button" class="secondary" id="clear-form">Clear Form</button>
-          </div>
-        </form>
+            <div class="form-actions">
+              <button type="submit">Submit Reflection</button>
+              <button type="button" class="secondary" id="clear-form">Clear Form</button>
+            </div>
+          </form>
+        </div>
       </div>
 
     </section>
@@ -65,7 +68,6 @@
   </footer>
 
 </main>
-
 <script src="script.js"></script>
 </body>
 </html>
